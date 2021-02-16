@@ -12,11 +12,11 @@ bool game(int num, int guesses){
 	}
 	if(guess < num){
 		guesses++;
-		cout << "you undershot"<<endl;
+		cout << "you undershot"<<endl;//tell if over or under increment guesses
 		return game(num, guesses);
 	}
 	if(guess == num){
-		guesses++;
+		guesses++;//print guesses at end
 		cout << "Guesses "<< guesses<<endl;
 		return true;
 	}
